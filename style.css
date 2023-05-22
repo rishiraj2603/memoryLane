@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.TopHeader{
+    /* border:  2px solid rgb(237, 0, 0); */
+    height: 20vh;
+    /* background: url(https://images.unsplash.com/photo-1683657331166-3023a195841a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fGlVSXNuVnRqQjBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60); */
+    /* border: 2px solid blue; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* display: flex; */
+    position: relative;
+}
+.imageFloat{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    gap: 30px;
+
+}
+.imageFloat img{
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    position: absolute;
+    height: 90%;
+    margin-top: 4px;
+    float: left;
+}
+.image1{
+    position: relative;
+    animation: Imgslide 16s ease-in-out infinite;
+    left: -70px;
+}
+.image2{
+    position: relative;
+    animation: Imgslide 16s ease-in-out infinite;
+    left: -195px;
+}
+.image3{
+    position: relative;
+    animation: Imgslide 16s ease-in-out infinite;
+    left: -310px;
+}
+.image4{
+    position: relative;
+    animation: Imgslide 16s ease-in-out infinite;
+    left: -450px;
+}
+.image5{
+    position: relative;
+    animation: Imgslide 16s ease-in-out infinite;
+    left: -580px;
+}
+.image6{
+    position: relative;
+    animation: Imgslide 16s ease-in-out infinite;
+    left: -710px;
+}
+
+.backhead{
+    /* border:  2px solid rgb(0, 225, 255); */
+    position: relative;
+    height: 100%;
+    width:100%;
+    float: right;
+}
+.backhead img{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+.container-fluid{
+    background-color: #fc6b68 ;
+}
+.centreImage{
+    /* border: 2px solid black; */
+    background-color:grey;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    position: relative;
+    transition: 2s;
+    
+}
+.centreImage img{
+    padding: 5px;
+    height:75%;
+    border-radius:20px;
+    flex-grow:0;
+    /* border: 5px solid rgb(175, 20, 20); */
+    transition: 2s;
+    position: absolute;
+}
+.centreImage p{
+    padding: 2px;
+    color:#5acfde ;
+    text-decoration: dotted;
+    position: absolute;
+    text-align: justify;
+    font-size: small;
+    /* border: 5px solid rgb(16, 124, 232);   */
+    bottom: 0px;
+    transition: 2s;
+}
+
+.memoryLane{
+    background-color: rgb(39, 177, 211);
+    font-family:cursive;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top:0;
+    padding-bottom: 20px;
+    animation: colorChange 5s ease-in-out infinite;
+}
+.card img{
+    height: 500px;
+}
+
+.centreImage img:active{
+    height: 50vh;
+}
+.centreImage p:hover{
+   transform: scale(1.5);
+}
+
+.centreImage:active{
+    height: 60vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes Imgslide {
+   0%{
+    left: -710px;
+   }
+    50%{
+     left: 1500px;
+   }
+    100%{
+        right:1500px;
+    }
+}
+
+@keyframes colorChange {
+    20%{
+        color: aquamarine;
+    }    
+    40%{
+        color: rgb(104, 216, 102);
+    }
+    60%{
+        color: rgb(2, 255, 200);
+    }
+    80%{
+        color: rgb(170, 251, 251);
+    }
+    90%{
+        color: rgb(255, 180, 205);
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    /* border: 2px solid rgb(192, 50, 50); */
+    height:100vh;
+    width: 100vw;
+    position:relative;
+} 
+.container img{
+    height:100vh;
+    width: 100vw;
+}
+/* .beginning{
+    border: 2px solid rgb(10, 220, 202); 
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+} */
+.beginning h3{
+    position: absolute;
+    /* border: 2px solid #ff0000; */
+    width: 550px;
+    height: 50px;  
+    color: rgb(44, 243, 187);
+    font-size: 3em;
+    font-family:fantasy;
+    font-style: italic ;
+    top: 20px;
+    left:550px;
+    transform: scale(0);
+    /* animation: lineShrink 10s ease-in-out infinite; */
+
+}
+.beginning img{
+    width: 20%;
+    height: 70vh;
+    position: absolute;
+    /* border: 2px solid #0bdd90; */
+    top: 100px;
+    left:-310px;
+    /* animation: imgMove 10s ease-in-out infinite; */
+
+}
+
+@keyframes lineShrink {
+    /* 50%{
+        transform: scale(1);
+    } */
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes imgMove {
+    100%{
+        left: 800px;
+    }
+    
+}
