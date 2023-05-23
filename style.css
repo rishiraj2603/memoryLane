@@ -2,6 +2,9 @@
     margin: 0px;
     padding:0;
 }
+body{
+    perspective: 1000%;
+}
 .TopHeader{
     /* border:  2px solid rgb(237, 0, 0); */
     height: 20vh;
@@ -156,17 +159,30 @@
 }
 
 
-.flipfun{
-    transition: 3s; 
+
+.card{
+    transition: 1s; 
+    transform-style: preserve-3d;
+    /* position: relative; */
     backface-visibility: hidden;
+    /* display: flex; */
+
 }
-.flipfun:hover{
-   
+.side-a{
+    position: relative;
+}
+.side-b{
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transform: rotateY(180deg);
+    color: rgb(130, 43, 236);
+    
+}
+.card:active{
+    visibility:visible;
     transform: rotateY(180deg);
 }
-
-
-
 
 
 
