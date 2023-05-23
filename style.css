@@ -159,8 +159,9 @@ body{
 }
 
 .sideMainBar{
+    float: left;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 25% 75%;
 }
 .sideBar{
     /* margin: 5px; */
@@ -172,12 +173,13 @@ body{
     background-color: rgb(251, 251, 251);
 }
 .story{
-    top: 0;
+    top: 10px;
     position: -webkit-sticky;
     position: sticky;
 }
 
 .card{
+    
     transition: 1s; 
     transform-style: preserve-3d;
     /* position: relative; */
@@ -206,7 +208,15 @@ body{
 
 
 
+@keyframes floatText {
+    25%{
+        right:100%
+    }
+    50%{
 
+    }
+    
+}
 
 
 
