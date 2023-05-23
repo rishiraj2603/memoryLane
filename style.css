@@ -158,7 +158,24 @@ body{
     height: 60vh;
 }
 
-
+.sideMainBar{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.sideBar{
+    /* margin: 5px; */
+    display: block;
+    padding:5px;
+    /* height: 10%; */
+    font-family: cursive;
+    font-style: oblique;
+    background-color: rgb(251, 251, 251);
+}
+.story{
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+}
 
 .card{
     transition: 1s; 
